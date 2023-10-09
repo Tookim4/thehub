@@ -1,0 +1,48 @@
+@import '../components/Variables.scss';
+
+.home_page{
+    position: relative;
+    height: 100vh;
+    background-color: $main-color;
+    background-image: url('../images/wallpaperflare.com_wallpaper\ \(4\).jpg');
+    background-position: center;
+
+    .landpage-content{
+        position: absolute;
+        top: 45%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        color: $main-color;
+
+        h1 {
+            font-family: $header-font;
+            font-size: $headers-xxl;
+            margin: 0; 
+        }
+        p {
+            font-family: $third-font;
+            font-size: $main-font;
+            margin-left: $margin;
+        }
+    }
+}
+
+.abouts-page{
+    position: relative;
+    height: 100vh;
+
+    .abouts-div{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        h3 {
+            font-size: $small-headers;
+        }
+        p {
+            font-size: $main-font;
+            font-family: $third-font;
+        }
+    }
+}

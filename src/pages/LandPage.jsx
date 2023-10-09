@@ -1,15 +1,20 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
+import MainFooter from '../components/MainFooter'
+import NavBar from '../components/NavBar'
 
 const LandPage = () => {
   return (
     <div>
       <div className="home_page">
-        <h1 style={{fontSize:'6rem'}}>Hi there!!</h1>
-        <p>You probably are looking for Kimutai Too's website!</p>
-        <p>Its great you took your time to check it out, sadly, he's working to improve the site and make it even better.</p>
-        <p>Here's a hint,check in after a while and he'll be back</p>
-      </div>
+       <NavBar/>
+       
+            <div className="landpage-content">
+              <h1 className="main-header">DeathStroke</h1>
+              <p>KIMUTAI TOO | FRONT-END DEVELOPER & DESIGNER</p>
+            </div>
+       <MainFooter/>      
+       </div>
     </div>
   )
 }
