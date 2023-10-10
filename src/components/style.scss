@@ -12,10 +12,11 @@
 
        .main-links {
         text-decoration: none;
-        margin: $margin-sm;
+        margin-right: $margin-sm;
         font-size: $main-font;
         color: $main-color;
         transition: 0.3s ease;
+        font-family: $third-font;
 
         &:hover{
             color: $purple;
@@ -23,6 +24,9 @@
         }
     }
 }
+
+  
+  
 
 
 .footer-div{
@@ -35,17 +39,8 @@
     justify-content: center;
     align-items: center;
 
-    .socials-div{
-       
-        a {
-            font-size: $small-headers;
-            margin: $margin-sm;
-            color: $main-color;
-            transition: 0.3s ease;
-
-            &:hover{
-                color: $pink;
-            }
-        }
+    p {
+        color: $main-color;
+        font-size: $main-font;
     }
 }
