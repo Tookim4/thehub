@@ -17,6 +17,7 @@ $margin:20px;
 $margin-sm:20px - 10px;
 $margin-lg:20px + 10px;
 $margin-xxl:20px + 80px;
+$padding:20px;
 
 // fonts
 $primary-font:'Yanone Kaffeesatz', sans-serif;
@@ -29,9 +30,14 @@ $headers-xxl:65px;
 $headers-lg:55px;
 $headers:45px;
 $small-headers:35px;
+$responsive-headers:20px;
 $main-font: 18px;
 $font-medium: 16px;
 $font-small:14px;
+
+// @extras
+$border-radius: 8px;
+
 
 @keyframes rotate3d {
     0% {

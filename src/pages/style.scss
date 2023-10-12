@@ -30,7 +30,8 @@
             width: 70px;
             height: auto;
             animation: rotate3d 10s linear infinite; /* Adjust the animation duration (10s) as needed */
-            animation-delay: 20s;
+            // animation-delay: 5s;
+            
 
             @media screen and (max-width: $breakpoint-xsm) {
                 // width: 50px;
@@ -129,3 +130,95 @@
         }
     }
 }
+
+
+.projects-div{
+    height: 100vh;
+    background-color: $dark;
+    position: relative;
+
+    .code-projects{
+        margin: $margin-xxl;
+        display: flex;
+
+        @media (max-width: 768px) {
+            margin: $margin-sm;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        .code-content{
+            width: 300px;
+            height: 150px;
+            border: 1px solid $main-color;
+            border-radius: $border-radius;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.4s ease;
+            position: relative;
+
+            &:hover{
+                border: 1px solid $purple;
+            }
+
+            @media (max-width: 768px) {
+                width: 250px;
+            }
+
+            .image-container{
+                width: 100px;
+                // height: 150px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    // padding: $padding/2;
+                }
+            }
+           
+
+            .project-title{
+               font-family: $primary-font;
+               
+
+                h4 {
+                    font-size: $responsive-headers;   
+                    color: $main-color;
+                }
+
+                hr {
+                    color: $purple;
+                }
+
+                p {
+                    color: $purple;
+                }
+            }
+        }
+
+        .hoverimg-div{
+            width: 20px;
+            // height: 150px;
+            position: absolute;
+            top: -20%;
+
+            img {
+                width: 100%;
+                height: auto;
+                opacity: 0;
+                transition: 0.4s ease-in-out;
+            }
+        }
+
+        &:hover .hover-img{
+            opacity: 1;
+        }
+    }
+}
+

@@ -12,10 +12,10 @@ const NavBar = () => {
         <Link to={'/'} className='main-links'>
           <IoHome/>
         </Link>
-        <Link to={'pages/AboutsPage'} className='main-links'>
+        <Link to={'/pages/AboutsPage'} className='main-links'>
           ABOUT
         </Link>
-        <Link to={'pages/ProjectsPage'} className='main-links'>
+        <Link to={'/pages/ProjectsPage'} className='main-links'>
           PROJECTS
         </Link>
       </div>
