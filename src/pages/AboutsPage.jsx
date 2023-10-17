@@ -3,6 +3,7 @@ import MainFooter from '../components/MainFooter'
 import NavBar from '../components/NavBar'
 import './style.scss'
 import death from '../images/death.png'
+import MyResume from '../components/MyResume'
 
 const AboutsPage = () => {
   return (
@@ -13,11 +14,17 @@ const AboutsPage = () => {
           <img src={death} alt="" srcset="" />
             {/* <h3 className="about-header">A</h3> */}
             <p>
-            Hi, I'm a front-end developer, Passionate about JavaScript and its ecosystem. I've mastered REACTJS and currently immersed in mastering the entire MERN stack.
+            Hello, I'm a front-end developer with a strong passion for JavaScript and its ecosystem, particularly ReactJS. I've mastered React and am currently immersed in mastering the entire MERN stack.
             </p>
-            <p>I have extensive knowledge of ReactJS and majority of it's libraries. I will create interactive, beautiful and marketable websites for you.  </p>
-            <p>Design and Editing is also an interest of mine. Having done several corporate and personal designs, including logos, flyers, banners, cards, intros & outros etc., I am conversant with related tech. This include Adobe products (Photoshop, Illustrator & After Effects), Gimp, Vegas Pro etc.</p>
+            <p>My expertise in ReactJS extends to a wide array of its libraries, enabling me to create interactive, aesthetically pleasing, and marketable websites.</p>
+            <p>In addition to development, I have a keen interest in design and editing. I've worked on various corporate and personal design projects, which include logos, flyers, banners, cards, intros, outros, and more. Proficient in Adobe products such as Photoshop, Illustrator, and After Effects, as well as tools like Gimp and Vegas Pro, I'm well-versed in the technology needed to bring creative visions to life.</p>
+
+            <div className="resume-section">
+              <MyResume/> 
+            </div>
         </div>
+
+        
 
         <MainFooter/>
     </div>
