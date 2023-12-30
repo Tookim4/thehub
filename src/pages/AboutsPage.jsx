@@ -6,6 +6,8 @@ import death from '../images/death.png'
 import MyResume from '../components/MyResume'
 
 const AboutsPage = () => {
+
+
   return (
     <div className='abouts-page'>
         <NavBar/>

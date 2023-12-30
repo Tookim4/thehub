@@ -1,11 +1,15 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './style.scss';
+// import { quantum } from 'ldrs'
 
 const MyResume = () => {
   const [isPopupVisible, setPopupVisible] = useState(false);
   const popupRef = useRef(null)
   const [iframeWidth, setIframeWidth] = useState(0);
   const [iframeHeight, setIframeHeight] = useState(0);
+  const [loading, setLoading] = useState(true);
+
+  // quantum.register()
 
   const containerStyle = {
     position: 'absolute',
@@ -68,25 +72,44 @@ const MyResume = () => {
     }
   }, []);
 
+  // useEffect(()=>{
+  //   const timeout = setTimeout(()=>{
+  //     setLoading(false);
+  //   }, 2000);
+
+  //   return () => clearTimeout(timeout);
+  // })
+
   return (
     <div className='resume-div'>
       <button className='resume-btn' onClick={togglePopup}>MY RESUME</button>
       
-      {isPopupVisible && (
-        <div className="overlay">
-          <div ref={popupRef} className="popup">
-            <div style={containerStyle}>
-              <iframe
-                loading="lazy"
-                style={iframeStyle}
-                src="https://www.canva.com/design/DAFxUy9ezUY/view?embed"
-                allowFullScreen
-                allow="fullscreen"
-              />
-            </div>
-            {/* <button onClick={togglePopup}>Close</button> */}
-          </div>
+      {/* {loading && (
+        <div className="loading">
+          <l-quantum
+            size="75"
+            speed="2.5" 
+            color="#917FB3" 
+          />
         </div>
+         )} */}
+
+
+        {isPopupVisible && (
+          <div className="overlay">
+            <div ref={popupRef} className="popup">
+              <div style={containerStyle}>
+                <iframe
+                  loading="lazy"
+                  style={iframeStyle}
+                  src="https://www.canva.com/design/DAFxUy9ezUY/view?embed"
+                  allowFullScreen
+                  allow="fullscreen"
+                />
+              </div>
+              {/* <button onClick={togglePopup}>Close</button> */}
+            </div>
+      </div>
       )}
     </div>
   );

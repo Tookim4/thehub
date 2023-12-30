@@ -6,12 +6,16 @@ import {LuMailPlus} from 'react-icons/lu'
 import NavBar from '../components/NavBar'
 import sword from '../images/sword.png'
 
+
+
 const LandPage = () => {
+
+
+
   return (
     <div>
       <div className="home_page">
        <NavBar/>
-       
             <div className="landpage-content">
               <img src={sword} alt="" className='sword-img'/>
               <div className="landpage-text">
