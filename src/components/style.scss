@@ -30,11 +30,11 @@
 
 
 .footer-div{
-    position: absolute;
+    position: fixed;
     height: 10vh;
     width: 100%;
     bottom: 0;
-    // background-color: $purple;
+    // background-color: $dark;
     display: flex;
     justify-content: center;
     align-items: center;
