@@ -162,6 +162,7 @@
             cursor: pointer;
             transition: 0.4s ease;
             position: relative;
+            margin: $margin-lg;
 
             &:hover{
                 border: 1px solid $purple;
@@ -200,25 +201,26 @@
                     color: $purple;
                 }
             }
-        }
-
-        .hoverimg-div{
-            width: 20px;
-            // height: 150px;
-            position: absolute;
-            top: -20%;
-
-            img {
-                width: 100%;
-                height: auto;
-                opacity: 0;
-                transition: 0.4s ease-in-out;
+            
+            .hoverimg-div{
+                width: 20px;
+                // height: 150px;
+                position: absolute;
+                top: -20%;
+    
+                img {
+                    width: 100%;
+                    height: auto;
+                    opacity: 0;
+                    transition: 0.4s ease-in-out;
+                }
+            }
+    
+            &:hover .hover-img{
+                opacity: 1;
             }
         }
 
-        &:hover .hover-img{
-            opacity: 1;
-        }
     }
 }
 
