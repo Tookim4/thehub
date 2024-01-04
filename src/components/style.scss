@@ -11,6 +11,7 @@
     .nav-links{
 
        .main-links {
+        position: relative;
         text-decoration: none;
         margin-right: $margin-sm;
         font-size: $main-font;
@@ -21,12 +22,19 @@
         &:hover{
             color: $purple;
         }
+
+        & img {
+            position: relative;
+            padding-left: 10px;
+            width: 50px;
+            height: 50px;
         }
+        }
+
+      
     }
 }
 
-  
-  
 
 
 .footer-div{

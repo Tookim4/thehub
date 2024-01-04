@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {IoHome} from 'react-icons/io5'
+import mainlogo from '../images/path4.png'
 import './style.scss';
 
 const NavBar = () => {
@@ -14,7 +15,7 @@ const NavBar = () => {
           ABOUT
         </Link>
         <Link to={'/'} className='main-links'>
-          <IoHome/>
+           <img src={mainlogo} alt=""/> 
         </Link>
         <Link to={'/pages/ProjectsPage'} className='main-links'>
           PROJECTS
