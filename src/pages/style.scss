@@ -133,12 +133,12 @@
 
 
 .projects-div{
-    height: 100vh;
     background-color: $dark;
     position: relative;
 
     .code-projects{
         margin: $margin-xxl;
+        padding-bottom: $padding;
         display: flex;
         flex-wrap: wrap;
 
