@@ -4,7 +4,7 @@ import MainFooter from '../components/MainFooter'
 import {FaGithub, FaBehance, FaLinkedinIn} from 'react-icons/fa'
 import {LuMailPlus} from 'react-icons/lu'
 import NavBar from '../components/NavBar'
-import sword from '../images/sword.png'
+import sword from '../images/sword.webp'
 
 
 
