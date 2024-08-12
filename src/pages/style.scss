@@ -1,11 +1,18 @@
 @import '../components/Variables.scss';
 
+body {
+    background-color: $main-color;
+}
+
 .home_page{
     position: relative;
-    height: 100vh;
+    height: 800px;
     background-color: $main-color;
     background-image: url('../images/mainbg.webp');
     background-position: center;
+    border-radius: 0px 0px 100px 100px;
+    
+
 
     /* Overlay styles */
   &::before {
@@ -15,40 +22,65 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(42, 47, 79, 0.849); /* Adjust the overlay color and opacity */
+    background-color: rgba(42, 47, 79, 0.849); 
+    border-radius: 0px 0px 100px 100px;
   }
 
     .landpage-content{
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: $main-color;
         display: flex;
+        align-items: center;
 
-        img {
-            width: 70px;
-            height: auto;
-            animation: rotate3d 10s linear infinite; /* Adjust the animation duration (10s) as needed */
-            // animation-delay: 5s;
-            
+        .profile-img{
+            position: relative;
+            width: 230px;
+            height: 350px;
+            // border-radius: 50%;
+            border: 3px solid $main-color;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // margin-top: $margin-xxl;
 
-            @media screen and (max-width: $breakpoint-xsm) {
-                // width: 50px;
-            }
+            img {
+                
+                width: 100%;
+                // height: 100%;
+                object-fit: cover;
+                     }
         }
 
         .landpage-text{
-            margin-top: $margin-xxl;
-       
+            width: 350px;
+            margin-left: $margin-lg;
+            z-index: 9;
+            // line-height: 1.0;
 
-        h2 {
-            font-family: $third-font;
-            font-size: $small-headers;
+            h2 {
+                // margin: 0;
+                font-family: $third-font;
+                font-size: $headers;
+                
+                @media screen and (max-width: $breakpoint-xsm) {
+                    font-size: $main-font;
+                }
+
             
-            @media screen and (max-width: $breakpoint-xsm) {
-                font-size: $main-font;
-            }
+        }
+
+        .my-name {
+            width: 100px;
+            text-align: center;
+            font-size: $responsive-headers;
+            background: $main-color;
+            color: $dark;
+            border-radius: 15px;
+            // margin: 0;
         }
 
         .socials-div{
@@ -70,6 +102,59 @@
 }
 
 
+.catch-phrase{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $main-color;
+
+    p {
+        font-size: $small-headers;
+     }
+}
+
+.my-services{
+    height: 350px;
+    background: $dark;
+    border-radius: 100px 100px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $main-color;
+
+    .services-title{
+       
+        
+        h2 {
+            width: 100px;
+            text-align: center;
+            font-size: $responsive-headers;
+            background: $main-color;
+            color: $dark;
+            border-radius: 15px; 
+        }
+    }
+
+    .main-services{
+        display: flex;
+
+        .main-service{
+            padding: $padding;
+            font-family: $third-font;
+
+            p {
+                width: 200px;
+            }
+        }
+    }
+}
+
+
+
+
+// Abouts page styling
 .abouts-page{
     position: relative;
     height: 100vh;

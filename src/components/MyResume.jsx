@@ -82,7 +82,7 @@ const MyResume = () => {
 
   return (
     <div className='resume-div'>
-      <button className='resume-btn' onClick={togglePopup}>MY RESUME</button>
+      <button className='resume-btn' onClick={togglePopup}>CV</button>
       
       {/* {loading && (
         <div className="loading">

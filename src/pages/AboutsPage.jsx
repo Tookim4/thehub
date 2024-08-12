@@ -20,10 +20,6 @@ const AboutsPage = () => {
             </p>
             <p>My expertise in ReactJS extends to a wide array of its libraries, enabling me to create interactive, aesthetically pleasing, and marketable websites.</p>
             <p>In addition to development, I have a keen interest in design and editing. I've worked on various corporate and personal design projects, which include logos, flyers, banners, cards, intros, outros, and more. Proficient in Adobe products such as Photoshop, Illustrator, and After Effects, as well as tools like Gimp and Vegas Pro, I'm well-versed in the technology needed to bring creative visions to life.</p>
-
-            <div className="resume-section">
-              <MyResume/> 
-            </div>
         </div>
 
         
