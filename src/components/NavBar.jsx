@@ -4,8 +4,6 @@ import mainlogo from '../images/path4.png'
 import './style.scss';
 import MyResume from './MyResume'
 
-
-
 const NavBar = () => {
 
 
@@ -14,24 +12,23 @@ const NavBar = () => {
       <div className="nav-links">
 
         <div className="left-nav-bar">
-            <Link to={'/'} className='main-logo'>
-              <img src={mainlogo} alt="" /> 
-            </Link>
-
             <div className="resume-link">
               <MyResume/> 
             </div>
+
+            {/* <div className='email-div' > */}
+             
+            {/* </div> */}
         </div>
 
         <ul className="page-links">
-          <Link to={'/pages/AboutsPage'} className='main-links'>
-            About /
+        <Link to={'/'} className='main-links'>
+            Home /
           </Link>
         
           <Link to={'/pages/ProjectsPage'} className='main-links'>
             Projects /
           </Link>
-
            
         </ul>
       

@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './style.scss';
+import { HiOutlineMail } from "react-icons/hi";
+
 // import { quantum } from 'ldrs'
 
 const MyResume = () => {

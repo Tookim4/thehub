@@ -4,7 +4,8 @@ import './style.scss'
 const MainFooter = () => {
   return (
     <div className='footer-div'>
-        <p>dEATHsTROKE</p>
+          {/* <hr /> */}
+        <p>dEATHsTROKE | tookim4@gmail.com </p>
     </div>
   )
 }

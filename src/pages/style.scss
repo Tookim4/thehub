@@ -10,7 +10,7 @@ body {
     background-color: $main-color;
     background-image: url('../images/mainbg.webp');
     background-position: center;
-    border-radius: 0px 0px 100px 100px;
+    border-radius: 0px 0px 60px 0px;
     
 
 
@@ -22,8 +22,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(42, 47, 79, 0.849); 
-    border-radius: 0px 0px 100px 100px;
+    background-color: rgba(12, 12, 12, 0.938); 
+    border-radius: 0px 0px 60px 0px;
   }
 
     .landpage-content{
@@ -32,45 +32,40 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         color: $main-color;
-        display: flex;
-        align-items: center;
 
-        .profile-img{
-            position: relative;
-            width: 230px;
-            height: 350px;
-            // border-radius: 50%;
-            border: 3px solid $main-color;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            // margin-top: $margin-xxl;
-
-            img {
-                
-                width: 100%;
-                // height: 100%;
-                object-fit: cover;
-                     }
-        }
 
         .landpage-text{
-            width: 350px;
-            margin-left: $margin-lg;
+            width: 400px;
+            // margin-left: $margin-lg;
             z-index: 9;
-            // line-height: 1.0;
+            text-align: center;
+            line-height: 1.0;
+
+            .main-logo{
+                font-size: $main-font;
+                // margin: 35px 0 0 100px;
+    
+                 img {
+                    position: relative;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
 
             h2 {
                 // margin: 0;
-                font-family: $third-font;
+                font-family: $header-font;
                 font-size: $headers;
                 
                 @media screen and (max-width: $breakpoint-xsm) {
                     font-size: $main-font;
-                }
+                } 
+        }
 
-            
+        p {
+            font-family: $primary-font;
+            line-height: 1.5;
+            font-size: $main-font;
         }
 
         .my-name {
@@ -84,17 +79,47 @@ body {
         }
 
         .socials-div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
        
             a {
                 font-size: $main-font;
-                margin: $margin-sm;
+                margin-right: $margin-sm;
                 color: $main-color;
                 transition: 0.3s ease;
+                font-family: $third-font;
+                text-decoration:  none;
+                display: flex;
+                justify-content:  center;
+                border-radius: 50%;
+                border: 1px solid $main-color;
+                padding: 10px;
     
                 &:hover{
                     color: $pink;
                 }
             }
+
+            .circle{
+                position: relative;
+                    width: 40px;           /* Set the width of the circle */
+                    height: 40px;          /* Set the height of the circle */
+                    background-color: red;  /* Set the background color */
+                    border-radius: 50%;     /* Make it a circle */
+                    overflow: hidden;
+                    margin-right: $margin-sm;
+                    // border: 1px solid $main-color;
+                  
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    // border-radius: 50%;
+                }
+            }
+
+           
         }
      }
 
@@ -108,49 +133,101 @@ body {
     justify-content: center;
     align-items: center;
     background-color: $main-color;
+    font-family: $header-font;
 
     p {
-        font-size: $small-headers;
+        font-size: $main-font;
      }
 }
 
-.my-services{
-    height: 350px;
+.skills-container{
     background: $dark;
-    border-radius: 100px 100px 0px 0px;
+    border-radius: 60px 0px 0px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     color: $main-color;
 
-    .services-title{
-       
-        
-        h2 {
-            width: 100px;
-            text-align: center;
-            font-size: $responsive-headers;
-            background: $main-color;
-            color: $dark;
-            border-radius: 15px; 
-        }
-    }
+    .skills-title{
+        margin-top: $margin-lg;
 
-    .main-services{
+         
+         p {
+            //  margin-left: 100px;
+             width: 100px;
+             text-align: center;
+             font-size: $main-font;
+             font-family: $primary-font;
+             background: $main-color;
+             color: $dark;
+            //  border-radius: 15px; 
+         }
+     }
+
+     .list-container{
+        margin: 0 auto;
         display: flex;
+        gap: 2em;
 
-        .main-service{
-            padding: $padding;
-            font-family: $third-font;
+        .skills-list{
+            list-style: none;
+            // width: 600px;
+            margin: 0;
+            padding: 0;
+            // display: flex;
+
+            li {
+                line-height: 2;
+                font-family: $primary-font;
+                font-size: $main-font;
+            }
+    
+         }
+     }
+}
+
+
+.about-container{
+    background: $dark;
+    border-radius: 0px 60px 60px 0px;
+
+    .about-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: $margin-xxl;
+
+        .about-text{
+            color: $main-color;
+            font-family: $primary-font;
+            margin: $margin-lg;
+
+            h5 {
+                font-weight: normal;
+                background-color: $main-color;
+                width: 80px;
+                color: $dark;
+                text-align: center;
+                padding: 10px;
+            }
 
             p {
-                width: 200px;
+                max-width: 40ch;
+                line-height: 1.5;
+            }
+        }
+
+        .about-image {
+
+            img {
+                width: 350px;
+                border: 2px solid $main-color;
+                border-radius: 60px 0px 60px 0px;
             }
         }
     }
 }
-
 
 
 
@@ -193,7 +270,8 @@ body {
         
 
         img {
-            width: 5%;
+            width: 150px;
+            border: 3px solid $main-color;
 
             @media screen and (max-width: $breakpoint-xsm) {
                 width: 10%;

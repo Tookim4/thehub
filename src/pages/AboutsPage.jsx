@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar'
 import './style.scss'
 import death from '../images/path444.png'
 import MyResume from '../components/MyResume'
+import profileimg from '../images/profileimgg.webp'
 
 const AboutsPage = () => {
 
@@ -13,7 +14,7 @@ const AboutsPage = () => {
         <NavBar/>
 
         <div className="abouts-div">
-          <img src={death} alt="" srcset="" />
+          <img src={profileimg} alt="" srcset="" className='profile-image'/>
             {/* <h3 className="about-header">A</h3> */}
             <p>
             Hello, I'm a front-end developer with a strong passion for JavaScript and its ecosystem, particularly ReactJS. I've mastered React and I'm currently immersed in mastering the entire MERN stack.
@@ -24,7 +25,7 @@ const AboutsPage = () => {
 
         
 
-        <MainFooter/>
+        {/* <MainFooter/> */}
     </div>
   )
 }

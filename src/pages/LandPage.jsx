@@ -8,8 +8,8 @@ import { MdOutlineWeb } from "react-icons/md";
 import { MdOutlineDesignServices } from "react-icons/md";
 import NavBar from '../components/NavBar'
 import sword from '../images/sword.webp'
-import profileimg from '../images/profileimgg.jpg'
-
+import mainlogo from '../images/path4.png'
+import mypicture from '../images/profileimg.jpg'
 
 const LandPage = () => {
 
@@ -21,26 +21,36 @@ const LandPage = () => {
       <div className="home_page">
           <NavBar/>
                 <div className="landpage-content">
-                  {/* <img src={sword} alt="" className='sword-img'/> */}
-
-                  <div className="profile-img">
-                    <img src={profileimg} alt="" srcset="" />
-                  </div>
 
                   <div className="landpage-text">
-                    {/* <h2>Hi there!</h2> */}
-                    <h1 className='my-name'>Kimutai Too</h1>
-                    <h2>WEB, UI/UX & GRAPHIC DESIGNER</h2>
+                    {/* <div className="main-logo">
+                      <img src={mainlogo} alt="" /> 
+                    </div> */}
+                    <h2>KIMUTAI TOO.</h2>
+                    <p>
+                      I design and develop minimalistic websites using Figma and ReactJs. 
+                      </p>
+
+                      <p>
+                      I create aesthetic UI/UX designs using figma and use ReactJs to bring my client's vision into reality while provide them with an impactful and effective piece of artwork. 
+                    </p>
+                    
                     <div className="socials-div">
-                        <a target='_blank' href="https://github.com/Tookim4"><FaGithub/></a>
-                        <a target='_blank' href="https://www.behance.net/tookim4eeec"><FaBehance/></a>
-                        <a target='_blank' href="https://www.linkedin.com/in/kimutai-too-33336414b/"><FaLinkedinIn/></a>
-                        {/* <a href="mailto:tookim4@gmail.com" target='_blank'><LuMailPlus/></a> */}
+                      
+                      {/* <div className="circle">
+                       <img src={mypicture} alt="" srcset="" />
+                      </div> */}
+                        
+
+                        <a target='_blank' rel='noreferrer' href="https://github.com/Tookim4"><FaGithub/></a>
+                        <a target='_blank' rel='noreferrer' href="https://www.behance.net/tookim4eeec"><FaBehance/></a>
+                        <a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/kimutai-too-33336414b/"><FaLinkedinIn/></a>
+                        <a href="mailto:tookim4@gmail.com" target='_blank'><LuMailPlus/></a>
                     </div>
                   </div>
                 </div>
 
-          {/* <MainFooter/>       */}
+             
        </div>
 
         <div className="catch-phrase">
@@ -49,34 +59,28 @@ const LandPage = () => {
               </p> 
         </div>
 
-        <div className="my-services">
 
-          <div className="services-title">
-            <h2>My Services</h2>
+        <div className="about-container">
+          <div className="about-content">
+            <div className="about-text">
+              <h5 className="about-title">ABOUT ME</h5>
+              <p>
+              I'm a front-end developer with a strong passion for JavaScript and its ecosystem, particularly ReactJS. I've mastered React and I'm currently immersed in mastering the entire MERN stack.
+              </p>
+              <p>
+              My expertise in ReactJS extends to a wide array of its libraries, enabling me to create interactive, aesthetically pleasing, and marketable websites.
+              </p>
+              <p>
+              In addition to development, I have a keen interest in design and editing. I've worked on various corporate and personal design projects, which include logos, flyers, banners, cards, intros, outros, and more. Proficient in Adobe products such as Photoshop, Illustrator, and After Effects, as well as tools like Gimp and Vegas Pro, I'm well-versed in the technology needed to bring creative visions to life.
+              </p>
+            </div>
+            <div className="about-image">
+             <img src={mypicture} alt="" srcset="" />
+            </div>
           </div>
-
-          <div className="main-services">
-              <div className="main-service">
-                <CgWebsite style={{fontSize: '40px'}}/>
-                <h2>Web Apps</h2>
-                <p>Transforming ideas into exceptional web app experiences.</p>
-              </div>
-
-              <div className="main-service">
-                <MdOutlineDesignServices style={{fontSize: '40px'}}/>
-                <h2>Graphic Design</h2>
-                <p>Transforming ideas into exceptional designs to help market your brand.</p>
-              </div>
-
-              <div className="main-service">
-                <MdOutlineWeb style={{fontSize: '40px'}}/>
-                <h2>UI/UX</h2>
-                <p>Designing interfaces that are intuitive, efficient, and enjoyable to use.</p>
-              </div>
-          </div>
-
         </div>
 
+        <MainFooter/>
 
     </div>
   )

@@ -15,27 +15,35 @@
         .left-nav-bar{
             display: flex;
 
-
-            .main-logo{
-                font-size: $main-font;
-                margin: 35px 0 0 100px;
-    
-                & img {
-                    position: relative;
-                    width: 50px;
-                    height: 50px;
-                }
-            }
-
             .resume-link{
-                margin: 50px $margin-lg;
+                margin: 50px 0 0 100px;
             }
+
+            .email-div{
+                margin: 50px 100px;
+
+            }   
         }
 
 
 
         .page-links{
             margin: 50px 100px;
+
+            .email-me{
+                cursor: pointer;
+                border: none;
+                background: $pink;
+                color: $dark;
+                padding: 10px;
+                transition: 0.4s ease;
+                text-decoration: none;
+
+                &:hover{
+                    color: $dark;
+                }
+
+            }
         }
 
        .main-links {
@@ -45,7 +53,7 @@
         font-size: $main-font;
         color: $main-color;
         transition: 0.3s ease;
-        font-family: $third-font;
+        font-family: $primary-font;
 
         &:hover{
             color: $purple;
@@ -59,20 +67,22 @@
 }
 
 
-
+// FOOTER STYLING
 .footer-div{
-    position: absolute;
-    height: 10vh;
+    // color: $dark;
+    // height: 5vh;
     width: 100%;
     bottom: 0;
+    text-align: center;
     // background-color: $dark;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 
     p {
-        color: $main-color;
+        color: $dark;
         font-size: $main-font;
+        font-family: $primary-font;
     }
 }
 
@@ -85,11 +95,18 @@
         background: $pink;
         color: $dark;
         padding: 10px;
+        margin-right: 10px;
         transition: 0.4s ease;
+
+        .email-link {
+            text-decoration: none;
+        }
 
         &:hover{
             color: $dark;
         }
+
+        
     }
 
     .overlay{
