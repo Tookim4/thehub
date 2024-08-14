@@ -140,6 +140,75 @@
 
 }
 
+// projects section styling
+.projects-container{
+
+    .projects-content{
+        width: 750px;
+        margin: $margin-xxl auto;
+
+        h5 {
+            font-family: $header-font;
+            font-weight: normal;
+            // background-color: $dark;
+            width: 150px;
+            // color: $main-color;
+            text-align: center;
+            padding: 10px 0;
+            height: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 1em;
+            row-gap: 1em;
+
+            .grid-item{
+                width: 400px;
+
+                a {
+                    text-decoration: none;
+                    border: 1px solid $main-color;
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                h4 {
+                    font-family: $primary-font;
+                    font-size: $font-small;
+                    color: $dark;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        .more-projects-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .projects-link{
+                font-family: $primary-font;
+                text-decoration: none;
+                background: $dark;
+                color: $main-color;
+                padding: 10px;
+                font-size: $font-small;
+                height: auto;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+       
+    }
+}
+
 
 .loading {
     height: 100vh;

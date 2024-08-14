@@ -10,6 +10,8 @@ import NavBar from '../components/NavBar'
 import sword from '../images/sword.webp'
 import mainlogo from '../images/path4.png'
 import mypicture from '../images/profileimg.jpg'
+import ProjectSection from '../components/ProectSection'
+import { RiGitCommitLine } from "react-icons/ri";
 
 const LandPage = () => {
 
@@ -63,7 +65,7 @@ const LandPage = () => {
         <div className="about-container">
           <div className="about-content">
             <div className="about-text">
-              <h5 className="about-title">ABOUT ME</h5>
+              <h5 className="about-title"><RiGitCommitLine style={{paddingRight: '5px'}}/> ABOUT ME</h5>
               <p>
               I'm a front-end developer with a strong passion for JavaScript and its ecosystem, particularly ReactJS. I've mastered React and I'm currently immersed in mastering the entire MERN stack.
               </p>
@@ -79,6 +81,10 @@ const LandPage = () => {
             </div>
           </div>
         </div>
+
+        <ProjectSection/>
+
+        <hr />
 
         <MainFooter/>
 
