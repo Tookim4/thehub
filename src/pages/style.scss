@@ -35,7 +35,7 @@ body {
 
 
         .landpage-text{
-            width: 400px;
+            // width: 400px;
             // margin-left: $margin-lg;
             z-index: 9;
             text-align: center;
@@ -58,14 +58,20 @@ body {
                 font-size: $headers;
                 
                 @media screen and (max-width: $breakpoint-xsm) {
-                    font-size: $main-font;
+                    // font-size: $main-font;
                 } 
         }
 
         p {
             font-family: $primary-font;
             line-height: 1.5;
-            font-size: $main-font;
+            font-size: $font-medium;
+            max-width: 60ch;
+
+            @media screen and (max-width: $breakpoint-xsm) {
+                max-width: 30ch;
+                // font-size: $main-font;
+            } 
         }
 
         .my-name {
@@ -137,57 +143,16 @@ body {
 
     p {
         font-size: $main-font;
-     }
-}
 
-.skills-container{
-    background: $dark;
-    border-radius: 60px 0px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    align-items: center;
-    color: $main-color;
-
-    .skills-title{
-        margin-top: $margin-lg;
-
-         
-         p {
-            //  margin-left: 100px;
-             width: 100px;
-             text-align: center;
-             font-size: $main-font;
-             font-family: $primary-font;
-             background: $main-color;
-             color: $dark;
-            //  border-radius: 15px; 
-         }
-     }
-
-     .list-container{
-        margin: 0 auto;
-        display: flex;
-        gap: 2em;
-
-        .skills-list{
-            list-style: none;
-            // width: 600px;
-            margin: 0;
-            padding: 0;
-            // display: flex;
-
-            li {
-                line-height: 2;
-                font-family: $primary-font;
-                font-size: $main-font;
-            }
-    
-         }
+        @media screen and (max-width: $breakpoint-xsm) {
+            font-size: $font-medium;
+        } 
      }
 }
 
 
+
+// ABOUT SECTION STYLING
 .about-container{
     background: $dark;
     border-radius: 60px 0px 0px 0px;
@@ -196,7 +161,12 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         padding: $margin-xxl;
+
+        @media screen and (max-width: $breakpoint-xsm) {
+            padding: $padding;
+        } 
 
         .about-text{
             color: $main-color;
@@ -227,7 +197,7 @@ body {
         .about-image {
 
             img {
-                width: 350px;
+                width: 300px;
                 border: 2px solid $main-color;
                 border-radius: 60px 0px 60px 0px;
             }

@@ -18,7 +18,7 @@ const ProjectSection = () => {
             <div className="grid-item">
                 <a href="https://rick-and-morty-api-sigma.vercel.app/">
                 <img src={rick} alt="" srcset="" />
-                <h4 className="item-title">Rick and Morty Cast API</h4>
+                <h4 className="item-title">Rick and Morty Cast API</h4> 
                 </a>
             </div>
             <div className="grid-item">

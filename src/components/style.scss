@@ -147,6 +147,13 @@
         width: 750px;
         margin: $margin-xxl auto;
 
+        @media screen and (max-width: $breakpoint-small) {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        } 
+
         h5 {
             font-family: $header-font;
             font-weight: normal;
@@ -158,6 +165,10 @@
             height: auto;
             display: flex;
             align-items: center;
+
+            // @media screen and (max-width: $breakpoint-small) {
+            //     width: 100%;
+            // } 
         }
 
         .projects-grid {
@@ -166,8 +177,17 @@
             column-gap: 1em;
             row-gap: 1em;
 
+            @media screen and (max-width: $breakpoint-small) {
+                grid-template-columns: 1fr;
+                margin: 0 auto;
+            } 
+
             .grid-item{
                 width: 400px;
+
+                @media screen and (max-width: $breakpoint-medium) {
+                    width: 350px;
+                } 
 
                 a {
                     text-decoration: none;
@@ -193,15 +213,39 @@
             justify-content: center;
 
             .projects-link{
+                position: relative;
                 font-family: $primary-font;
                 text-decoration: none;
-                background: $dark;
-                color: $main-color;
+                // background: $dark;
+                border: 1px solid $dark;
+                color: $dark;
                 padding: 10px;
                 font-size: $font-small;
                 height: auto;
                 display: flex;
                 align-items: center;
+                transition: .4s ease;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 0%;
+                    background-color: $purple;
+                    z-index: -1;
+                    transition: height 0.4s ease; 
+                }
+
+                &:hover::before{
+                    height: 100%;
+                }
+
+                &:hover{
+                    border: 1px solid $purple;
+                    color: $main-color;
+                }
             }
         }
 
