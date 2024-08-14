@@ -3,11 +3,7 @@ import './style.scss'
 import MainFooter from '../components/MainFooter'
 import {FaGithub, FaBehance, FaLinkedinIn} from 'react-icons/fa'
 import {LuMailPlus} from 'react-icons/lu'
-import { CgWebsite } from "react-icons/cg";
-import { MdOutlineWeb } from "react-icons/md";
-import { MdOutlineDesignServices } from "react-icons/md";
 import NavBar from '../components/NavBar'
-import sword from '../images/sword.webp'
 import mainlogo from '../images/path4.png'
 import mypicture from '../images/profileimg.jpg'
 import ProjectSection from '../components/ProectSection'
@@ -37,7 +33,7 @@ const LandPage = () => {
                         <a target='_blank' rel='noreferrer' href="https://github.com/Tookim4"><FaGithub/></a>
                         <a target='_blank' rel='noreferrer' href="https://www.behance.net/tookim4eeec"><FaBehance/></a>
                         <a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/kimutai-too-33336414b/"><FaLinkedinIn/></a>
-                        <a href="mailto:tookim4@gmail.com" target='_blank'><LuMailPlus/></a>
+                        <a href="mailto:tookim4@gmail.com" target='_blank' rel='noreferrer'><LuMailPlus/></a>
                     </div>
                   </div>
                 </div>  
@@ -72,7 +68,7 @@ const LandPage = () => {
 
         <ProjectSection/>
 
-        <hr />
+        <hr className='footer-hr'/>
 
         <MainFooter/>
 

@@ -16,7 +16,7 @@ const ProjectsPage = () => {
 
         <div className="code-projects">
 
-          <a target='_blank' href="https://rick-and-morty-api-sigma.vercel.app/">
+          <a target='_blank' rel='noreferrer' href="https://rick-and-morty-api-sigma.vercel.app/">
               <div className="code-content">
                   <div class="image-container">
                     <img src={rickimg} alt="" className='project-logo' />
@@ -35,7 +35,7 @@ const ProjectsPage = () => {
               </div>
             </a>
 
-            <a target='_blank' href="https://afreative.com">
+            <a target='_blank' rel='noreferrer' href="https://afreative.com">
               <div className="code-content">
                   <div class="image-container">
                     <img src={afreativeimg} alt="" className='project-logo' />
@@ -54,7 +54,7 @@ const ProjectsPage = () => {
               </div>
             </a>
 
-            <a target='_blank' href="https://kratos-dungeonn.vercel.app/">
+            <a target='_blank' rel='noreferrer' href="https://kratos-dungeonn.vercel.app/">
               <div className="code-content">
                   <div class="image-container">
                     <img src={kdimg} alt="" className='project-logo' />
@@ -73,7 +73,7 @@ const ProjectsPage = () => {
               </div>
             </a>
  
-            <a target='_blank' href="https://medicsonair.vercel.app/">
+            <a target='_blank' rel='noreferrer' href="https://medicsonair.vercel.app/">
               <div className="code-content">
                   <div class="image-container">
                     <img src={medicsimg} alt="" className='project-logo' />

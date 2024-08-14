@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './style.scss';
-import { HiOutlineMail } from "react-icons/hi";
 
 // import { quantum } from 'ldrs'
 
@@ -74,13 +73,6 @@ const MyResume = () => {
     }
   }, []);
 
-  // useEffect(()=>{
-  //   const timeout = setTimeout(()=>{
-  //     setLoading(false);
-  //   }, 2000);
-
-  //   return () => clearTimeout(timeout);
-  // })
 
   return (
     <div className='resume-div'>
@@ -107,6 +99,7 @@ const MyResume = () => {
                   src="https://www.canva.com/design/DAFxUy9ezUY/view?embed"
                   allowFullScreen
                   allow="fullscreen"
+                  title='my cv'
                 />
               </div>
               {/* <button onClick={togglePopup}>Close</button> */}

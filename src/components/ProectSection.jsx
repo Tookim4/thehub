@@ -15,30 +15,22 @@ const ProjectSection = () => {
           <h5 className="projects-title"><RiGitCommitLine style={{paddingRight: '5px'}}/> RECENT PROJECTS</h5>
 
           <div className="projects-grid">
-            <div className="grid-item">
-                <a href="https://rick-and-morty-api-sigma.vercel.app/">
-                <img src={rick} alt="" srcset="" />
-                <h4 className="item-title">Rick and Morty Cast API</h4> 
-                </a>
-            </div>
-            <div className="grid-item">
-                <a href="https://afreative.com/">
+            <a href="https://rick-and-morty-api-sigma.vercel.app/" className="grid-item">
+                    <img src={rick} alt="" srcset="" />
+                    <h4 className="item-title">Rick and Morty Cast API</h4> 
+            </a>
+            <a href="https://afreative.com/" className="grid-item">
                 <img src={afreative} alt="" srcset="" />
                 <h4 className="item-title">Afreative Landpage</h4>
-              </a>
-            </div>
-            <div className="grid-item">
-                <a href="https://creative-touch.vercel.app/">
+            </a>
+            <a href="https://creative-touch.vercel.app/" className="grid-item">
                 <img src={creative} alt="" srcset="" />
                 <h4 className="item-title">Creative Touch</h4>
-              </a>
-            </div>
-            <div className="grid-item">
-                <a href="https://medicsonair.vercel.app/">
+            </a>
+            <a href="https://medicsonair.vercel.app/" className="grid-item">
                 <img src={medics} alt="" srcset="" />
                 <h4 className="item-title">Medics On Air</h4>
-              </a>
-            </div>
+            </a>
           </div>
 
           <div className="more-projects-container">

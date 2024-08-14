@@ -3,12 +3,12 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import LandPage from '../pages/LandPage'
 import ProjectsPage from '../pages/ProjectsPage';
 import AboutsPage from '../pages/AboutsPage';
-import { quantum } from 'ldrs'
+import { cardio } from 'ldrs'
 
 const Routers = () => {
   const [loading, setLoading] = useState(true);
 
-  quantum.register()
+  cardio.register()
 
   useEffect(()=>{
     const timeout = setTimeout(()=>{
@@ -22,9 +22,10 @@ const Routers = () => {
     <div>
         {loading ? (
         <div className="loading">
-          <l-quantum
+          <l-cardio
             size="75"
-            speed="2.5" 
+            speed="3" 
+            stroke='1.5'
             color="#917FB3" 
           />
         </div>

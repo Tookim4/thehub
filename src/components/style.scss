@@ -3,20 +3,22 @@
 .main-nav{
     position: relative;
     width: 100%;
-    // height: 10vh;
+    height: 10vh;
     // display: flex;
-    // justify-content: center;
     // align-items: center;
 
     .nav-links{
+        width: 100%;
+        height: 100%;
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: space-around;
 
         .left-nav-bar{
-            display: flex;
+            // display: flex;
 
             .resume-link{
-                margin: 50px 0 0 100px;
+                // margin: 100px;
             }
 
             .email-div{
@@ -28,36 +30,27 @@
 
 
         .page-links{
-            margin: 50px 100px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            // margin: 50px 100px;
 
-            .email-me{
-                cursor: pointer;
-                border: none;
-                background: $pink;
-                color: $dark;
-                padding: 10px;
-                transition: 0.4s ease;
+
+            .main-links {
+                position: relative;
                 text-decoration: none;
-
+                margin-right: $margin-sm;
+                font-size: $main-font;
+                color: $main-color;
+                transition: 0.3s ease;
+                font-family: $primary-font;
+        
                 &:hover{
-                    color: $dark;
+                    color: $purple;
                 }
-
-            }
         }
 
-       .main-links {
-        position: relative;
-        text-decoration: none;
-        margin-right: $margin-sm;
-        font-size: $main-font;
-        color: $main-color;
-        transition: 0.3s ease;
-        font-family: $primary-font;
-
-        &:hover{
-            color: $purple;
-        }
+     
 
 
         }
@@ -90,13 +83,39 @@
 .resume-div{
 
     button {
+        position: relative;
         cursor: pointer;
-        border: none;
-        background: $pink;
-        color: $dark;
+        border: 1px solid $main-color;
+        background: none;
+        color: $main-color;
         padding: 10px;
         margin-right: 10px;
         transition: 0.4s ease;
+        overflow: hidden;
+        z-index: 2;
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0%;
+            background-color: $main-color;
+            z-index: -1;
+            transition: height 0.4s ease; 
+            color: $dark;
+        }
+
+        &:hover::before{
+            height: 100%;
+        }
+
+        &:hover{
+            border: 1px solid $purple;
+            color: $dark;
+        }
+
 
         .email-link {
             text-decoration: none;
@@ -183,27 +202,55 @@
             } 
 
             .grid-item{
+                position: relative;
+                overflow: hidden;
                 width: 400px;
+                text-decoration: none;
 
                 @media screen and (max-width: $breakpoint-medium) {
                     width: 350px;
                 } 
 
-                a {
-                    text-decoration: none;
-                    border: 1px solid $main-color;
-                }
-
                 img {
                     width: 100%;
                 }
 
-                h4 {
-                    font-family: $primary-font;
-                    font-size: $font-small;
-                    color: $dark;
-                    font-weight: normal;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 0%;
+                    background-color: #917fb3e8; 
+                    z-index: 1;
+                    transition: height 0.4s ease;
                 }
+
+                &:hover::before {
+                    height: 100%; 
+                }
+
+              
+
+                h4 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: $primary-font;
+                    font-size: $font-medium;
+                    color: $main-color;
+                    font-weight: normal;
+                    opacity: 0;
+                    z-index: 2;
+                    transition: opacity 0.4s ease;
+                    pointer-events: none;
+                }
+
+                &:hover h4 {
+                    opacity: 1; /* Makes the title visible on hover */
+                  }
             }
         }
 
@@ -211,6 +258,7 @@
             width: 100%;
             display: flex;
             justify-content: center;
+            margin: $margin-lg 0;
 
             .projects-link{
                 position: relative;
