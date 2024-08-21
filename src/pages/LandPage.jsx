@@ -5,9 +5,10 @@ import {FaGithub, FaBehance, FaLinkedinIn} from 'react-icons/fa'
 import {LuMailPlus} from 'react-icons/lu'
 import NavBar from '../components/NavBar'
 import mainlogo from '../images/path4.png'
-import mypicture from '../images/profileimg.jpg'
+import mypicture from '../images/mainimg.png'
 import ProjectSection from '../components/ProectSection'
 import { RiGitCommitLine } from "react-icons/ri";
+import MainDock from '../components/MainDock'
 
 const LandPage = () => {
 
@@ -20,14 +21,20 @@ const LandPage = () => {
           <NavBar/>
                 <div className="landpage-content">
                   <div className="landpage-text">
-                    <h2>KIMUTAI TOO.</h2>
-                    <p>
-                      I design and develop minimalistic websites using Figma and ReactJs. 
-                      </p>
 
-                      <p>
-                      I create aesthetic UI/UX designs using figma and use ReactJs to bring my client's vision into reality while provide them with an impactful and effective piece of artwork. 
-                    </p>
+                    <div className="landpage-headers">
+                      <h1>YOUR VISION IS MY CRAFT</h1>
+                      <h5>DESIGN & DEVELOPMENT STUDIO</h5>
+                    </div>
+
+                     <div className="landpage-texts">
+                            <p>
+                            I design and develop minimalistic websites using Figma and ReactJs. 
+                           
+                            I also create aesthetic UI/UX designs using Figma, Photoshop and use ReactJs to bring my client's vision into reality while provide them with an impactful and effective piece of artwork. 
+                          </p>
+                    </div>
+                     
                     
                     <div className="socials-div">
                         <a target='_blank' rel='noreferrer' href="https://github.com/Tookim4"><FaGithub/></a>
@@ -48,6 +55,9 @@ const LandPage = () => {
 
         <div className="about-container">
           <div className="about-content">
+           <div className="about-image">
+             <img src={mypicture} alt="" srcset="" />
+            </div>
             <div className="about-text">
               <h5 className="about-title"><RiGitCommitLine style={{paddingRight: '5px'}}/> ABOUT ME</h5>
               <p>
@@ -60,17 +70,17 @@ const LandPage = () => {
               When I'm not knee-deep in code or tweaking a design, you'll probably find me leveling up in my favorite games.
               </p>
             </div>
-            <div className="about-image">
-             <img src={mypicture} alt="" srcset="" />
-            </div>
+            
           </div>
         </div>
 
         <ProjectSection/>
 
-        <hr className='footer-hr'/>
+        
 
         <MainFooter/>
+
+        <MainDock/>
 
     </div>
   )

@@ -6,7 +6,8 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
-    "framer-motion": "^10.16.4",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.29",
     "ldrs": "^1.0.1",
     "node-sass": "^9.0.0",
     "react": "^18.2.0",
@@ -16,6 +17,8 @@
     "react-scripts": "5.0.1",
     "react-spring": "^9.7.3",
     "react-transition-group": "^4.4.5",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss": "^3.4.10",
     "web-vitals": "^2.1.0"
   },
   "scripts": {

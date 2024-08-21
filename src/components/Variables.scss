@@ -1,17 +1,27 @@
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+@font-face {
+  font-family: 'Rockybilly';
+  src: url('../fonts/Rockybilly.ttf') format('truetype');
+  // font-weight: normal;
+  // font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montez-Regular';
+  src: url('../fonts/Montez-Regular.ttf') format('truetype');
+  // font-weight: normal;
+  // font-style: normal;
+}
 
 // colors
 $main-color: #FDE2F3;
 $purple:#917FB3;
 $pink:#E5BEEC;
 $dark:#000000;
+$bright: #B43F3F;
 
 // spacing
 $margin:20px;
@@ -22,9 +32,7 @@ $padding:20px;
 
 // fonts
 $primary-font: "Fredoka", sans-serif;
-$header-font: "Merienda", cursive;
-$third-font:'Yanone', sans-serif;
-$tartiary-font: "Radio Canada", sans-serif;
+$header-font: "Montez-Regular",  ;
 
 
 $headers-xxl:65px;

@@ -1,19 +1,37 @@
 @import './Variables.scss';
 
+
+
+
+// Navbar stylings
 .main-nav{
     position: relative;
-    // width: 100%;
     height: 10vh;
+    width: 100%;
     display: flex;
-    // align-items: center;
     justify-content: center;
+    text-align: center;
 
     .nav-links{
-        max-width: 750px;
+        width: 75%;
         height: 100%;
         display: flex;
-        align-items: center;
-        // justify-content: space-between;
+        justify-content: space-between;
+
+
+        .left-nav-bar{
+            color: $main-color;
+            display: flex;
+            align-items: center;
+
+            h3{
+                font-family: $header-font;
+            }
+
+            img {
+                width: 25px;
+            }
+        }
 
 
         .page-links{
@@ -65,24 +83,7 @@
 }
 
 
-// FOOTER STYLING
-.footer-div{
-    // color: $dark;
-    // height: 5vh;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-    // background-color: $dark;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
 
-    p {
-        color: $dark;
-        font-size: $main-font;
-        font-family: $primary-font;
-    }
-}
 
 
 .resume-div{
@@ -180,11 +181,10 @@
         } 
 
         h5 {
-            font-family: $header-font;
+            font-family: $primary-font;
             font-weight: normal;
-            // background-color: $dark;
             width: 150px;
-            // color: $main-color;
+            color: $bright;
             text-align: center;
             padding: 10px 0;
             height: auto;
@@ -336,3 +336,115 @@
     text-align: center;
     z-index: 9;
 }
+
+
+
+
+
+// dock stylings
+.dock {
+    position: fixed;
+    bottom: 1%;
+    left: 50%;
+    background: $bright;
+    color: $main-color;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #b43f3fda;
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  
+    &.fade-dock {
+      // Fading and sliding effect when the dock is supposed to fade
+      opacity: 0;
+      transform: translateX(-50%) translateY(50px); // Move dock downwards
+    }
+  
+    .icons {
+      i {
+        margin: 0 10px;
+        font-size: 20px;
+      }
+    }
+  }
+  
+  
+  
+  
+  
+
+
+  // FOOTER STYLING
+  .footer-div {
+    position: relative;
+    height: 60px;
+    color: $main-color;
+    text-align: center;
+    overflow: hidden; 
+    border-radius: 10px 0;
+    font-family: $primary-font;
+  
+    // Background fill effect
+    .background-fill {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      background: $dark; // Background color for fill effect
+      transform: translateX(-50%) scaleY(0); // Start with no fill
+      transform-origin: top center; // Fill from top center
+      transition: transform 1s ease; // Smooth fill transition
+      z-index: -1; // Place behind the content
+    }
+  
+    // When footer is visible, expand the fill effect
+    &.footer-visible .background-fill {
+      transform: translateX(-50%) scaleY(1); // Scale to fill the footer
+    }
+  
+    .footer-hr {
+      border: none;
+      border-top: 1px solid #fff;
+      width: 400px;
+    }
+  
+    .icons {
+      display: flex;
+      justify-content: center;
+    //   align-items: center;
+      margin-top: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+  
+      &.show-icons {
+        opacity: 1;
+        transform: translateY(0);
+      }
+  
+      i {
+        margin: 0 10px;
+        font-size: 20px;
+
+        a {
+            text-decoration: none;
+            color: $main-color;
+
+            &:hover{
+                color: $purple;
+            }
+        }
+      }
+    }
+    
+    &.footer-visible {
+      padding-bottom: 60px; // Adjust based on icon height and footer design
+    }
+  }
+  
+  
+  
+  
+  

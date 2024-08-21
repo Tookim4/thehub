@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.scss';
 import MyResume from './MyResume'
+import mainlogo from '../images/death.png'
 
 const NavBar = () => {
 
@@ -11,18 +12,20 @@ const NavBar = () => {
       <div className="nav-links">
 
         <div className="left-nav-bar">
-            
+            <img src={mainlogo} alt="" srcset="" />
+            <h3>KimToo</h3>
         </div>
 
         <div className="page-links">
-             <div className="resume-link">
+            <div className="resume-link">
                 <MyResume/> 
-              </div>
+            </div>
+            
             <Link to={'/pages/ProjectsPage'} className='main-links'>
               Projects
             </Link> 
         </div>
-      
+
       </div>
     </div>
   );
