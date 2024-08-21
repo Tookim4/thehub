@@ -183,7 +183,8 @@
         h5 {
             font-family: $primary-font;
             font-weight: normal;
-            width: 150px;
+            font-size: $main-font;
+            // width: 150px;
             color: $bright;
             text-align: center;
             padding: 10px 0;
@@ -290,7 +291,6 @@
                 position: relative;
                 font-family: $primary-font;
                 text-decoration: none;
-                // background: $dark;
                 border: 1px solid $dark;
                 color: $dark;
                 padding: 10px;

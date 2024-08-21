@@ -42,10 +42,7 @@ body {
 
         .landpage-text{
             width: 55%;
-            // margin-left: $margin-lg;
             z-index: 9;
-            // text-align: center;
-            // line-height: 0.8;
 
             .landpage-headers{
         
@@ -53,21 +50,34 @@ body {
                 h1 {
                     font-family: $header-font;
                     font-size: $headers;
+
+                    .my-craft{
+                        text-decoration: none;
+                        color: $main-color;
+                        transition: 0.5s ease;
+
+                        &:hover {
+                            color: $bright;
+                        }
+                    }
                     
                     @media screen and (max-width: $breakpoint-xsm) {
                         // font-size: $main-font;
                     } 
                  }
+            }
 
-                 h5{
+            .landpage-texts{
+                line-height: 0.6;
+
+                .page-header{
                     font-family: $primary-font;
                     font-weight: normal;
                     font-size: $responsive-headers;
                     color: $bright;
+                    margin: 0;
                  }
-            }
 
-            .landpage-texts{
                 p {
                     font-family: $primary-font;
                     line-height: 1.5;
@@ -100,7 +110,8 @@ body {
                 padding: 10px;
     
                 &:hover{
-                    color: $pink;
+                    color: $bright;
+                    border: 1px solid $bright;
                 }
             }
 
@@ -139,10 +150,10 @@ body {
     background-color: $main-color;
     font-family: $header-font;
     text-align: center;
-    font-size: $font-small;
+    font-size: $small-headers;
 
     p {
-        font-size: $main-font;
+        // font-size: $main-font;
         
 
         @media screen and (max-width: $breakpoint-xsm) {
@@ -157,25 +168,28 @@ body {
 // ABOUT SECTION STYLING
 .about-container{
     background: $dark;
-    border-radius: 60px 0px 60px 0px;
+    border-radius: 10px 0px 10px 0px;
     display: flex;
+    flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: $padding;
 
     .about-content{
+        display: flex;
+        align-items: center;
         max-width: 750px;
-        text-align: center;
         margin: $margin-lg 0;
 
         @media screen and (max-width: $breakpoint-xsm) {
+            flex-wrap: wrap;
             padding: $padding;
         } 
 
         .about-text{
             color: $main-color;
             font-family: $primary-font;
-            margin: $margin-lg 0 $margin-sm;
+            // margin: $margin-lg 0 $margin-sm;
 
             h5 {
                 font-weight: normal;
@@ -183,16 +197,16 @@ body {
                 color: $bright;
                 font-size: $main-font;
                 height: auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
                 // color: $main-color;
             }
 
             p {
                 max-width: 70ch;
                 line-height: 1.5;
-                font-size: $font-medium;
+                font-size: $font-small;
             }
         }
 
@@ -206,9 +220,41 @@ body {
             }
 
             img {
-                width: 100px;
-                border: 2px solid $main-color;
+                width: 200px;
+                border: 2px solid $bright;
                 border-radius: 50%;
+            }
+        }
+    }
+
+    .skills-section{
+        max-width: 750px;
+        z-index: 0;
+        text-align: center;
+
+        .skills-header{
+
+            h5 {
+                color: $bright;
+                font-size: $main-font;
+                font-family: $primary-font;
+                font-weight: normal;
+            }
+        }
+
+        .skills-div{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0 20px;
+
+            p {
+                color: $main-color;
+                font-family: $primary-font;
+                border: 1px solid $main-color;
+                padding: 10px;
+                font-size: $font-small;
             }
         }
     }

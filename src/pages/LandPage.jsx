@@ -9,6 +9,7 @@ import mypicture from '../images/mainimg.png'
 import ProjectSection from '../components/ProectSection'
 import { RiGitCommitLine } from "react-icons/ri";
 import MainDock from '../components/MainDock'
+import { Link } from 'react-router-dom';
 
 const LandPage = () => {
 
@@ -23,11 +24,11 @@ const LandPage = () => {
                   <div className="landpage-text">
 
                     <div className="landpage-headers">
-                      <h1>YOUR VISION IS MY CRAFT</h1>
-                      <h5>DESIGN & DEVELOPMENT STUDIO</h5>
+                      <h1>YOUR VISION IS <Link to={'/pages/ProjectsPage'} className="my-craft">MY CRAFT</Link></h1>
                     </div>
 
                      <div className="landpage-texts">
+                         <p className='page-header'>DESIGN & DEVELOPMENT STUDIO</p>
                             <p>
                             I design and develop minimalistic websites using Figma and ReactJs. 
                            
@@ -72,6 +73,28 @@ const LandPage = () => {
             </div>
             
           </div>
+
+          {/* <hr style={{width: '80%'}}/> */}
+
+          <div className="skills-section">
+            <div className="skills-header">
+              {/* <h5 className="skills-title">
+              <RiGitCommitLine style={{paddingRight: '5px'}}/> MY SKILLS
+              </h5> */}
+            </div>
+            <div className="skills-div">
+              <p>FRONT-END DEV</p>
+              <p>UI DESIGN</p>
+              <p>UX DESIGN</p>
+              <p>GRAPHIC DESIGN</p>
+              <p>BRANDING</p>
+              <p>ADOBE SUITE</p>
+              <p>FIGMA</p>
+              <p>INKSCAPE</p>
+              <p>GITHUB + GIT</p>
+            </div>
+          </div>
+
         </div>
 
         <ProjectSection/>
