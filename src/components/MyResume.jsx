@@ -16,10 +16,8 @@ const MyResume = () => {
     position: 'absolute',
     width: '100%',
     height: '100%',
-    // border: 'none',
-     // Set a maximum width to limit the iframe size
     margin: '0 auto', // Center the container horizontally
-    overflow: 'hidden', // Hide any content that overflows
+    overflow: 'hidden',
   };
 
   const iframeStyle = {
@@ -78,15 +76,6 @@ const MyResume = () => {
     <div className='resume-div'>
       <button className='resume-btn' onClick={togglePopup}>CV</button>
       
-      {/* {loading && (
-        <div className="loading">
-          <l-quantum
-            size="75"
-            speed="2.5" 
-            color="#917FB3" 
-          />
-        </div>
-         )} */}
 
 
         {isPopupVisible && (
@@ -102,7 +91,6 @@ const MyResume = () => {
                   title='my cv'
                 />
               </div>
-              {/* <button onClick={togglePopup}>Close</button> */}
             </div>
       </div>
       )}

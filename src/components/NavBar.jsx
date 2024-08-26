@@ -12,7 +12,7 @@ const NavBar = () => {
       <div className="nav-links">
 
         <div className="left-nav-bar">
-            <img src={mainlogo} alt="" srcset="" />
+            <img src={mainlogo} alt="" />
             <h3>KimToo</h3>
         </div>
 

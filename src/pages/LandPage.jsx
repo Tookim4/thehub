@@ -1,10 +1,9 @@
 import React from 'react'
 import './style.scss'
 import MainFooter from '../components/MainFooter'
-import {FaGithub, FaBehance, FaLinkedinIn, FaTwitter, FaInstagram} from 'react-icons/fa'
+import {FaGithub, FaBehance, FaLinkedinIn} from 'react-icons/fa'
 import {LuMailPlus} from 'react-icons/lu'
 import NavBar from '../components/NavBar'
-import mainlogo from '../images/path4.png'
 import mypicture from '../images/mainimg.png'
 import ProjectSection from '../components/ProectSection'
 import { RiGitCommitLine } from "react-icons/ri";
@@ -57,7 +56,7 @@ const LandPage = () => {
         <div className="about-container">
           <div className="about-content">
            <div className="about-image">
-             <img src={mypicture} alt="" srcset="" />
+             <img src={mypicture} alt=""/>
             </div>
             <div className="about-text">
               <h5 className="about-title"><RiGitCommitLine style={{paddingRight: '5px'}}/> ABOUT ME</h5>
@@ -74,13 +73,8 @@ const LandPage = () => {
             
           </div>
 
-          {/* <hr style={{width: '80%'}}/> */}
-
           <div className="skills-section">
             <div className="skills-header">
-              {/* <h5 className="skills-title">
-              <RiGitCommitLine style={{paddingRight: '5px'}}/> MY SKILLS
-              </h5> */}
             </div>
             <div className="skills-div">
               <p>FRONT-END DEV</p>
