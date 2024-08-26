@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.scss'
 import MainFooter from '../components/MainFooter'
-import {FaGithub, FaBehance, FaLinkedinIn} from 'react-icons/fa'
+import {FaGithub, FaBehance, FaLinkedinIn, FaTwitter, FaInstagram} from 'react-icons/fa'
 import {LuMailPlus} from 'react-icons/lu'
 import NavBar from '../components/NavBar'
 import mainlogo from '../images/path4.png'

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './style.scss';
-import { FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaWhatsapp, FaBehance, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const MainFooter = () => {
   const [isFooterVisible, setIsFooterVisible] = useState(false);
@@ -27,7 +27,10 @@ const MainFooter = () => {
     <div className={`footer-div ${isFooterVisible ? 'footer-visible' : ''}`} id='footer'>
       <div className={`background-fill ${isFooterVisible ? 'fill-background' : ''}`}></div>
       <div className={`icons ${isFooterVisible ? 'show-icons' : ''}`}>
-        <i className="facebook"><a href=""><FaWhatsapp /></a></i>
+        <i className="facebook"><a href="https://wa.link/acd2eh"><FaWhatsapp /></a></i>
+        <i className="facebook"><a href="https://www.linkedin.com/in/kimutai-too-33336414b/"><FaLinkedinIn /></a></i>
+        <i className="facebook"><a href="https://github.com/Tookim4"><FaGithub /></a></i>
+        <i className="facebook"><a href="https://www.behance.net/tookim4eeec"><FaBehance /></a></i>
         <i className="twitter"><a href="https://x.com/KimToo13"><FaTwitter /></a></i>
         <i className="instagram"><a href="https://www.instagram.com/too_kimutai13/"><FaInstagram /></a></i>
       </div>

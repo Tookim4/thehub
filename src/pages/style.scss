@@ -43,6 +43,12 @@ body {
         .landpage-text{
             width: 55%;
             z-index: 9;
+            transition: 0.3s ease;
+
+
+            @media screen and (max-width: $breakpoint-xsm) {
+                width: 70%;
+            } 
 
             .landpage-headers{
         
@@ -85,7 +91,7 @@ body {
                     max-width: 50ch;
         
                     @media screen and (max-width: $breakpoint-xsm) {
-                        max-width: 30ch;
+                        // max-width: 30ch;
                         // font-size: $main-font;
                     } 
                 }

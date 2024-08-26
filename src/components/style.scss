@@ -173,8 +173,8 @@
         width: 750px;
         margin: $margin-xxl auto;
 
-        @media screen and (max-width: $breakpoint-small) {
-            width: 350px;
+        @media screen and (max-width: $breakpoint-xsm) {
+            width: 300px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -200,10 +200,10 @@
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            column-gap: 1em;
-            row-gap: 1em;
+            column-gap: 5px;
+            row-gap: 5px;
 
-            @media screen and (max-width: $breakpoint-small) {
+            @media screen and (max-width: $breakpoint-xsm) {
                 grid-template-columns: 1fr;
                 margin: 0 auto;
             } 
@@ -216,7 +216,7 @@
                 background-color: $main-color;
 
                 @media screen and (max-width: $breakpoint-xxsm) {
-                    width: 250px;
+                    max-width: 300px;
                 } 
 
                 img {
@@ -347,14 +347,20 @@
     bottom: 1%;
     left: 50%;
     background: $bright;
-    color: $main-color;
+    // color: $main-color;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px #b43f3fda;
+    // box-shadow: 0 4px 8px #b43f3fda;
     transition: 0.3s ease-in-out;
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    opacity: 0;
+    transform: translateX(-50%) translateY(50px);
+    z-index: 10;
   
+    &.show-dock {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
     &.fade-dock {
       // Fading and sliding effect when the dock is supposed to fade
       opacity: 0;
@@ -363,12 +369,22 @@
   
     .icons {
       i {
-        margin: 0 10px;
+        margin: 0 5px;
         font-size: 20px;
+
+        a {
+            color: $main-color;
+            transition: 0.3s ease-in-out;
+
+            &:hover{
+                color: $purple;
+            }
+        }
       }
     }
-  }
-  
+}
+
+
   
   
   
