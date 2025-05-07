@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import LandPage from '../pages/LandPage'
 import ProjectsPage from '../pages/ProjectsPage';
 import { cardio } from 'ldrs'
+import DesignsPage from '../pages/DesignsPage';
 
 const Routers = () => {
   const [loading, setLoading] = useState(true);
@@ -33,6 +34,7 @@ const Routers = () => {
             <Routes>
                 <Route path='/' Component={LandPage}/>
                 <Route path='pages/ProjectsPage' Component={ProjectsPage}/>
+                <Route path='pages/DesignsPage' Component={DesignsPage}/>
             </Routes>
         </BrowserRouter>
             )}

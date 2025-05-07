@@ -400,6 +400,106 @@ body {
     }
 }
 
+
+// Designs Page STYLING
+.designs-page{
+    background-color: $dark;
+
+    .designs-container{
+        width: 100%;
+
+        .logos{
+            width: 75%;
+            margin: 0 auto;
+
+            .design-titles{
+                color: $main-color;
+                font-family: $primary-font;
+            }
+    
+            @media screen and (max-width: $breakpoint-small) {
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            } 
+
+            h5 {
+                font-family: $header-font;
+                font-weight: normal;
+                // background-color: $dark;
+                width: 150px;
+                // color: $main-color;
+                text-align: center;
+                padding: 10px 0;
+                height: auto;
+                display: flex;
+                align-items: center;
+    
+                // @media screen and (max-width: $breakpoint-small) {
+                //     width: 100%;
+                // } 
+            }
+
+            .logos-grid{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                column-gap: 1em;
+                row-gap: 1em;
+            }
+        }
+    }
+}
+
+
+
+
+// Logos Grid styling
+.grid-items{
+    position: relative;
+    overflow: hidden;
+    // width: 400px;
+    text-decoration: none;
+    background-color: $main-color;
+    // color: $dark;
+    transition: 0.4s ease;
+    border: 2px solid $main-color;
+    // height: 300px;
+
+    @media screen and (max-width: $breakpoint-medium) {
+        width: 350px;
+    } 
+
+    &:hover{
+        transform: scale(1.03);
+    }
+
+    img {
+        width: 100%;
+        max-height: 250px;
+        transition: opacity 0.3s ease-in-out;
+        opacity: 1;
+        
+
+        &.fade{
+            opacity: 0;
+        }
+    } 
+
+    .logo-info{
+                        
+                        
+        h5 {
+            padding: $margin-sm;
+            margin: 0;
+            font-weight: bold;
+            font-size: $responsive-headers;
+            width: 100%;
+            color: $dark;
+        }
+    }
+}
+
 .loading {
     height: 100vh;
     display: flex;
